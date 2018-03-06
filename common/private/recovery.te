@@ -2,16 +2,20 @@ recovery_only(`
 
 # XXX
 ##allow init rootfs:file write;
+allow recovery pstorefs:dir search;
+allow recovery pstorefs:file { open read };
+allow recovery sf_lcd_density_prop:file { getattr open read };
 allow recovery sysfs_graphics:dir search;
 allow recovery sysfs_graphics:file { getattr open read write };
-get_prop(recovery, sf_lcd_density_prop)
-r_dir_file(recovery, pstorefs)
-unix_socket_connect(recovery, vold, vold)
+allow recovery vold:unix_stream_socket connectto;
+allow recovery vold_socket:sock_file write;
+##allow recovery default_prop:property_service set;
 
 # Secure adb (setup_adbd)
 allow adbd adb_keys_file:dir search;
-r_dir_file(recovery, adb_keys_file)
-set_prop(recovery, shell_prop)
+allow recovery adb_keys_file:dir r_dir_perms;
+allow recovery adb_keys_file:file r_file_perms;
+allow recovery shell_prop:property_service set;
 
 # Manage fstab and /adb_keys
 userdebug_or_eng(`
@@ -25,15 +29,18 @@ allow recovery proc_meminfo:file { getattr open read };
 
 # Read storage files and directories
 allow recovery tmpfs:dir mounton;
-r_dir_file(recovery, media_rw_data_file)
-r_dir_file(recovery, sdcard_type)
-r_dir_file(recovery, vfat)
+allow recovery media_rw_data_file:dir r_dir_perms;
+allow recovery media_rw_data_file:file r_file_perms;
+allow recovery vfat:dir r_dir_perms;
+allow recovery vfat:file r_file_perms;
+allow recovery sdcard_type:dir r_dir_perms;
+allow recovery sdcard_type:file r_file_perms;
 
 # Control properties
-set_prop(recovery, ffs_prop)
-set_prop(recovery, recovery_prop)
+allow recovery recovery_prop:property_service set;
+allow recovery ffs_prop:property_service set;
 
 # Set system properties for various things
-set_prop(recovery, system_prop)
+allow recovery system_prop:property_service set;
 
 ')
