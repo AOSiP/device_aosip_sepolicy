@@ -4,5 +4,4 @@
 #
 
 BOARD_SEPOLICY_DIRS += \
-    device/aosip/sepolicy/qcom/common \
-    device/aosip/sepolicy/qcom/$(TARGET_BOARD_PLATFORM)
+    device/aosip/sepolicy/qcom/vendor
