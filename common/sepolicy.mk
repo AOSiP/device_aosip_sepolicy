@@ -7,7 +7,9 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     device/aosip/sepolicy/common/public
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/aosip/sepolicy/common/private
+    device/aosip/sepolicy/common/private \
+    device/aosip/sepolicy/common/dynamic
 
 BOARD_SEPOLICY_DIRS += \
+    device/aosip/sepolicy/common/dynamic \
     device/aosip/sepolicy/common/vendor
