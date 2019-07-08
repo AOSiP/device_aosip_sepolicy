@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4e1d2f16_0cf55cd3",
+        "filename": "common/dynamic/hwservice_contexts",
+        "patchSetId": 4
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000155
+      },
+      "writtenOn": "2019-07-08T09:39:18Z",
+      "side": 1,
+      "message": "Was this by mistake? this one should be reverted back to top line.",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 111
+      },
+      "revId": "4fa3cb0b018476c79c19090f3d83bb10870ea4b2",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": true
+    }
+  ]
+}
