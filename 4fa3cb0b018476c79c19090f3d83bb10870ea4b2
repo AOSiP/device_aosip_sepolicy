@@ -22,6 +22,30 @@
       "revId": "4fa3cb0b018476c79c19090f3d83bb10870ea4b2",
       "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d55ddd08_a5fb1b5b",
+        "filename": "common/dynamic/hwservice_contexts",
+        "patchSetId": 4
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000044
+      },
+      "writtenOn": "2019-07-10T01:13:30Z",
+      "side": 1,
+      "message": "It\u0027s a single line. Gerrit wraps lines by default, check the line number carefully.",
+      "parentUuid": "4e1d2f16_0cf55cd3",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 111
+      },
+      "revId": "4fa3cb0b018476c79c19090f3d83bb10870ea4b2",
+      "serverId": "44769751-fbfc-497d-9c9a-4bb318a4117c",
+      "unresolved": true
     }
   ]
 }
