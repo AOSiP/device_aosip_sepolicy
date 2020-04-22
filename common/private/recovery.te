@@ -1,5 +1,7 @@
 recovery_only(`
 
+permissive recovery;
+
 # Sideload backuptool
 allow recovery self:process setexec;
 
