@@ -11,3 +11,6 @@ hal_client_domain(system_server, hal_lineage_fod)
 hal_client_domain(system_server, hal_lineage_touch)
 hal_client_domain(system_server, hal_lineage_trust)
 hal_client_domain(system_server, hal_lineage_powershare)
+
+# ADB over network
+set_prop(system_server, shell_prop)
