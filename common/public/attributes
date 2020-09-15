@@ -1,6 +1,6 @@
 # HALs
-hal_attribute(lineage_camera_motor)
-hal_attribute(lineage_fod)
-hal_attribute(lineage_touch)
-hal_attribute(lineage_trust)
-hal_attribute(lineage_powershare)
+hal_attribute_aosip(lineage_camera_motor)
+hal_attribute_aosip(lineage_fod)
+hal_attribute_aosip(lineage_touch)
+hal_attribute_aosip(lineage_trust)
+hal_attribute_aosip(lineage_powershare)
