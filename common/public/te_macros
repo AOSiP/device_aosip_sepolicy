@@ -1,6 +1,6 @@
 #####################################
-# hal_attribute_lineage(hal_name)
-define(`hal_attribute_lineage', `
+# hal_attribute_aosip(hal_name)
+define(`hal_attribute_aosip', `
 attribute hal_$1;
 expandattribute hal_$1 true;
 attribute hal_$1_client;
